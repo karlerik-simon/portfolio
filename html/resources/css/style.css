@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+}
+
+div {
+    margin: -100px auto 0 auto;
+    width: 700px;
+    height: 200px;
+    position: relative;
+    top: 50%;
+}
+
+div h1, div p {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 15px !important;
+}
