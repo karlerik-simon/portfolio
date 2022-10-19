@@ -6,6 +6,13 @@ daily?. The same Jenkins will fetch the testing branch more often, maybe every m
 
 Even though this is a small project, I want to keep the same CI/CD and best practices for all of my projects, to ensure quality and safety.
 
+## Version History
+
 ## Related projects
 
 This portfolio has an API which is itself hosted at another VM. The API code is not public as of now.
+
+## Tech Stack
+
+I have not yet decided which stack I will be using, but it looks like I will
+be using Vue.js with Vanilla CSS. Node.js with Express for API devlopment and AWS or Azure for hosting.
