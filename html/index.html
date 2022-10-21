@@ -7,25 +7,79 @@
     <title>Home - Simon Hallin</title>
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/side-nav.css">
+    <link rel="stylesheet" href="resources/css/projects.css">
+    <script src="https://kit.fontawesome.com/bcecda43e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="page-header">
         <div>
             <h1>Portfolio of Simon Hallin</h1>
             <p>This portfolio is currently in progress and will be updated continually</p>
         </div>
     </header>
     <main>
-        <section>
-            <h1>Projects</h1>
+        <section id="projects">
+            <header>
+                <h1>Projects</h1>
+            </header>
+            <main>
+                <section class="projects-container">
+                    <article class="projects-item">
+                        <h2>Calory Management App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque sint ipsam excepturi! Labore, aperiam!</p>
+                        <div>
+                            <h3>Techstack</h3>
+                            <ul>
+                                <li><i class="fa-brands fa-react"></i></li>
+                                <li><i class="fa-brands fa-python"></i></li>
+                                <li><i class="fa-brands fa-sass"></i></li>
+                                <li><i class="fa-brands fa-aws"></i></li>
+                                <li><i class="fa-brands fa-jenkins"></i></li>
+                                <li><i class="fa-brands fa-redhat"></i></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <h2>PaaS Virtual Machine Network</h2>
+                        <p>A PaaS that let the user configure a virtual environment environment via a nice GUI. It is also built to use
+                            work with Acrive Directory
+                        </p>
+                        <div>
+                            <h3>Techstack</h3>
+                        </div>
+                    </article>
+                    <article class="projects-item">
+                        <h2>Log framework for C++</h2>
+                        <p>A framework for C++ that let's people log different parts of their code with ease. </p>
+                        <div>
+                            <h3>Techstack</h3>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </section>
+        <section id="skills">
+            <header>
+                <h1>Skills & Certificates</h1>
+            </header>
+        </section>
+        <section id="about">
+            <header>
+                <h1>About Me</h1>
+            </header>
+        </section>
+        <section id="other">
+            <header>
+                <h1>Other Stuff</h1>
+            </header>
         </section>
     </main>
     <aside class="side-nav">
         <ul>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Skills and Certificates</a></li>
-            <li><a href="">About me</a></li>
-            <li><a href="">Other</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills and Certificates</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#other">Other</a></li>
         </ul>
     </aside>
     <footer>
