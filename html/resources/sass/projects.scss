@@ -10,9 +10,9 @@
         min-height: 200px;
         overflow: hidden;
 
-        > div {
+        .projects-item-info {
             position: absolute;
-            top: 170px;
+            top: 150px;
             left: 0;
             height: 220px;
            /*border: 1px solid red;/* /* DEBUG */
@@ -32,11 +32,26 @@
                     color: blue;
                     text-decoration: none;
                     font-size: 1.1rem;
+                    cursor: pointer;
 
                     i {
                         margin-left: 5px;
                     }
                 }
+            }
+        }
+
+        .projects-item-tech-info {
+            position: absolute;
+            top: 0;
+            right: 100%;
+            background: gray;
+            width: 100%;
+            height: 100%;
+            color: white;
+
+            p {
+                padding: 0 20px;
             }
         }
     }
@@ -45,7 +60,7 @@
 // animations
 @keyframes card-text-slide {
     0% {
-        top: 170px;
+        top: 150px;
     }
 
     100% {
@@ -53,8 +68,24 @@
     }
 }
 
+@keyframes card-panel-slide {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
 .text-slide {
     animation-name: card-text-slide;
     animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.panel-slide {
+    animation-name: card-panel-slide;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 }
