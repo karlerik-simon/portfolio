@@ -10,12 +10,44 @@
   min-height: 200px;
   overflow: hidden;
 }
-.projects-container article div {
+.projects-container article > div {
   position: absolute;
   top: 170px;
+  left: 0;
+  height: 220px;
+  /*border: 1px solid red;/* /* DEBUG */
+  padding: 10px 20px;
 }
-.projects-container article div h2 {
+.projects-container article > div h2 {
   font-size: 1.7rem;
+}
+.projects-container article > div div {
+  display: flex;
+  gap: 20px;
+}
+.projects-container article > div div a {
+  display: flex;
+  align-items: center;
+  color: blue;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.projects-container article > div div a i {
+  margin-left: 5px;
+}
+
+@keyframes card-text-slide {
+  0% {
+    top: 170px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.text-slide {
+  animation-name: card-text-slide;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=projects.css.map */
