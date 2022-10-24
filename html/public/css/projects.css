@@ -9,6 +9,7 @@
   position: relative;
   min-height: 200px;
   overflow: hidden;
+  font-family: "Nunito Sans", sans-serif;
 }
 .projects-container article .projects-item-info {
   position: absolute;
@@ -21,9 +22,15 @@
 .projects-container article .projects-item-info h2 {
   font-size: 1.7rem;
 }
+.projects-container article .projects-item-info p {
+  font-size: 1.3rem;
+}
 .projects-container article .projects-item-info div {
   display: flex;
   gap: 20px;
+}
+.projects-container article .projects-item-info div div {
+  margin-left: auto;
 }
 .projects-container article .projects-item-info div a {
   display: flex;
@@ -45,8 +52,18 @@
   height: 100%;
   color: white;
 }
-.projects-container article .projects-item-tech-info p {
+.projects-container article .projects-item-tech-info div {
   padding: 0 20px;
+}
+.projects-container article .projects-item-tech-info div header {
+  display: flex;
+  align-items: center;
+}
+.projects-container article .projects-item-tech-info div header i {
+  margin-left: auto;
+}
+.projects-container article .projects-item-tech-info div p {
+  font-size: 1.3rem;
 }
 
 @keyframes card-text-slide {
@@ -73,7 +90,7 @@
 
 .panel-slide {
   animation-name: card-panel-slide;
-  animation-duration: 0.4s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
 

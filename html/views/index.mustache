@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Simon Hallin</title>
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="resources/css/side-nav.css">
-    <link rel="stylesheet" href="resources/css/projects.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/side-nav.css">
+    <link rel="stylesheet" href="/css/projects.css">
     <script src="https://kit.fontawesome.com/bcecda43e9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="page-header">
@@ -18,7 +21,7 @@
         </div>
     </header>
     <main>
-        <section id="projects">
+        <section class="page-section" id="projects">
             <header>
                 <h1>Projects</h1>
             </header>
@@ -29,17 +32,25 @@
                             <h2>Calory Management App</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque sint ipsam excepturi! Labore, aperiam!</p>
                             <div class="projects-item-links-container">
-                                <a href="">View Site <i class="fa-solid fa-arrow-right-long"></i></a>
-                                <a href="">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
                                 <a class="tech-info-btn">Technical Details</a>
+                                <div>
+                                    <a href="">View Site <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a href="">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
                             </div>
                         </div>
                         <div class="projects-item-tech-info">
-                            <p>The project is made with .NET's Web API in C#, and then a micro api on the frontend, which
-                                is made with Node.js. I used Vue.js and JQuery and used Google's Materialize for styling the
-                                website. The website is hosted on AWS and I use a combination of Github and Jenkins for my
-                                CI/CD pipeline.
-                            </p>
+                            <div>
+                                <header>
+                                    <h3>Technical Details</h3>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </header>
+                                <p>The project is made with .NET's Web API in C#, and then a micro api on the frontend, which
+                                    is made with Node.js. I used Vue.js and JQuery and used Google's Materialize for styling the
+                                    website. The website is hosted on AWS and I use a combination of Github and Jenkins for my
+                                    CI/CD pipeline.
+                                </p>
+                            </div>
                         </div>
                     </article>
                     <article class="projects-item">
@@ -57,19 +68,20 @@
                         </div>
                     </article>
                 </section>
+                <a href="/projects" class="button">See all projects</a>
             </main>
         </section>
-        <section id="skills">
+        <section class="page-section" id="skills">
             <header>
                 <h1>Skills & Certificates</h1>
             </header>
         </section>
-        <section id="about">
+        <section class="page-section" id="about">
             <header>
                 <h1>About Me</h1>
             </header>
         </section>
-        <section id="other">
+        <section class="page-section" id="other">
             <header>
                 <h1>Other Stuff</h1>
             </header>
@@ -86,6 +98,6 @@
     <footer>
 
     </footer>
-    <script src="resources/js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

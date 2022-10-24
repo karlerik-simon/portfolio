@@ -3,6 +3,18 @@ html, body {
   margin: 0;
 }
 
+html body > header h1 {
+  font-size: 3rem;
+}
+html body > header p {
+  font-size: 1.5rem;
+  margin-top: 15px !important;
+}
+
+main .page-section > header h1 {
+  font-size: 3rem;
+}
+
 .page-header {
   height: 100vh;
   background: black;
@@ -24,15 +36,6 @@ html, body {
 section {
   width: 1000px;
   margin: 0 auto;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-p {
-  font-size: 1.5rem;
-  margin-top: 15px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
